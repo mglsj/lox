@@ -47,6 +47,7 @@ help:
 	@echo "  help      - Show this help message"
 
 ast:
+	@echo "Generating AST classes..."
 	@$(JAVA) com/craftinginterpreters/tool/GenerateAst.java $(JAVA_SRC_DIR)
 
 .PHONY: all compile run run-file clean help
