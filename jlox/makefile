@@ -15,12 +15,12 @@ compile:
 	@echo "Compilation complete."
 
 # Run the Lox interpreter in REPL mode
-run: compile
+run: 
 	@echo "Running Lox interpreter..."
 	@$(JAVA) $(JAVA_MAIN_CLASS)
 
 # Run the Lox interpreter with a script
-run-file: compile
+run-file: 
 	@if [ -z "$(FILE)" ]; then \
 		echo "Usage: make run-file FILE=path/to/script.lox"; \
 	else \

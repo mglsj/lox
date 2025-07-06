@@ -1,0 +1,8 @@
+class Foo {
+
+  init() {
+  }
+}
+
+var foo = Foo();
+print foo.bar; // Should print 42
